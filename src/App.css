@@ -1,0 +1,702 @@
+
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.Total_Home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+  padding: 10px 110px;
+  height: 100vh;
+  position: relative;
+  background: url('https://img.freepik.com/premium-photo/aesthetic-beautiful-water-color-background-abstract-blue-social-media-usage-d_594654-657.jpg?w=826');
+  
+}
+.Home_Text{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor:default;
+}
+.Home_Text>img{
+  width: 20%;
+}
+.Home_Text .Home_h1_text{
+  color: white;
+  font-size: 25px;
+  margin-bottom: -50px;
+}
+.Home_Text p{
+  color:white;
+  font-size: 17px;
+  letter-spacing: 1px;
+} 
+.Home_Text a{
+  color: white;
+  align-self: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.Home_image{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid rgba(255,255,255,1.0);
+  padding: 20px 0px;
+}
+.Home_image > img{
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform .8s ease;
+  position:relative;
+  top:0;
+  left: 0;
+  bottom: 500px;
+  animation: bounce 2s infinite alternate;
+  box-shadow: 7px 10px 10px 0px #f4f8fc, 0 1px 1px #4469ff;
+}
+.Home_image > img:hover{
+  transform: scale(1.1);
+  box-shadow: 20px 10px 30px 2px #98eeff, 0 1px 1px #79ebff;
+}
+.Home_image a{
+  color: white;
+  text-decoration: none;
+  align-self: center;
+  position: relative;
+  top: 40px;
+  border: 1px solid white;
+  padding: 8px 40px;
+  border-radius: 3px;
+  background-color: #211951;
+  letter-spacing: 0.5px;
+}
+.Card_Home{
+  border: 1px solid white;
+  width:22%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2px;
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+.Card_Home>p{
+  font-size: 14px;
+} 
+.Total_Cards{
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.Card_Home i{
+  color: white;
+  font-size: 33px;
+  height: 30px;
+  font-weight: 200;
+  padding: 10px 2px;
+  position: relative;
+  top: 0px;
+  animation: rotate 2s linear infinite;
+}
+.Button button{
+  text-decoration: none;
+  color: #211951;
+  background-color: #f4b700;
+  width: 100%;
+  padding: 2rem 4rem;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+}
+.Button button span{
+  text-decoration:line-through;
+}
+
+
+/* <-------------------------------About Css---------------------------------------------------------------------> */
+
+.Total_About{
+  background-color: #122323;
+  padding: 0px 180px;
+  border-top: 1px solid #bea374;
+  border-bottom: 1px solid #bea374;
+}
+.Cards_About{
+  width: 100%;
+  background-color: white;
+  padding: 25px 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #bea374;
+}
+.Card_Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Card_Text h1{
+  font-size: 60px;
+  font-weight: 500;
+  color:#284e4e;
+  margin-bottom:-10px;
+}
+.Card_Text span{
+  color: #bea374;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+}
+.Card_Text p{
+  font-size: 23px;
+  padding: 0px 5rem;
+  text-align:center;
+  font-weight: 398;
+}
+
+.Text_Card_About{
+  background-color: #eae8dde5;
+  border-radius: 20px;
+  border: 0.1px solid #bea374;
+  padding: 25px 35px;
+  width: 50%;
+  height: 420px;
+}
+.Sub_About{
+  display: flex;
+  gap: 30px;
+}
+.Sub_About>img{
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  border: 0.1px solid #bea374;
+}
+.Total_Bullet{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.Total_Bullet>i{
+  color: #284e4e;
+}
+.Total_Bullet>p{
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+.Total_Bullet>b{
+  font-weight: 600;
+}
+/* <-------------------------------------------Info Css-------------------------------------------------------> */
+
+.Total_Info{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0px;
+}
+.Total_Info{
+  line-height: 20px;
+}
+.Total_Info .Info_Text h1{
+  color: orangered;
+  font-size: 50px;
+}
+.Info_Text{
+  margin-top: 50px;
+}
+.Total_Info .Info_Text h2{
+  color: #122323;
+  font-size: 40px;
+}
+.Info_Card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 10px;
+}
+.Inner_Info_Card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding-bottom: 50px; 
+}
+.Inner_Info_Card>img{
+  width: 30%;
+}
+.Inner_Info_Card>p{
+  font-size: 20px;
+  width: 70%;
+}
+
+/* <-----------------------------------Timer Css-----------------------------------------------------------------------------------> */
+
+.Total_Timer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #030637;
+  margin: auto;
+  height: 100vh;
+  gap: 30px;
+  width: 100%;
+}
+.Total_countdown{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.Total_countdown .Countdown{
+  display: flex;
+  gap: 20px;
+  align-items:flex-start;
+  justify-content: center;
+  color: white;
+  line-height: 20px;
+}
+.Timer_Text{
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+.Countdown_Component{
+  color: white;
+}
+.Countdown_Component h1{
+  font-size: 60px;
+}
+.Countdown h1{
+  font-size: 60px;
+}
+.Countdown_Component small{
+  font-size: 20px;
+}
+
+/* <-------------------------------------------Action css---------------------------------------------> */
+
+.Total_Action{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 70vh;
+  background-color: #1a1646;
+  padding: 50px;
+}
+.Total_Action .Action_Left{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ebebef;
+  background-color: #131033;
+  padding: 60px;
+  width: 60%;
+  height:380px;
+  border-radius: 10px 0px 0px 10px;
+
+}
+.Total_Action .Action_Right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #ebebef;
+  background-color: #131033;
+padding:40px 10px 10px 60px;
+  width: 40%;
+padding: 50px 100px;
+  height:380px;
+  border-radius: 0px 10px 10px 0px;
+}
+.Total_Action .Action_Left h1{
+  color: white;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.Total_Action .Action_Left ul{
+  color: rgb(180, 179, 179);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+.Action_Right h2{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Action_Right h1{
+  color: #f5bd02;
+  font-size: 80px;
+  line-height: 10px;
+}
+.Action_Right h1 span{
+  color: white;
+  font-size: 20px;
+  text-decoration: line-through;
+  position: relative;
+  bottom: 15px;
+}
+.Action_Right button{
+  text-decoration: none;
+  color: #211951;
+  background-color: #f5bd00;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/* <---------------------------------------------------Form Css-----------------------------------------> */
+.form-container {
+  position: fixed;
+  bottom: 0;
+  left:30px;
+  bottom: 30px;
+  width: 40%;
+  background-color:#bea374;
+  padding: 30px 80px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.Form_Details{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Form_Details input{
+  border: 2px solid white;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 17px;
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+.Form_Details button{
+  background-color: #284e4e;
+  padding: 1rem 1.5rem;
+  font-size: 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.Form_Heading{
+  display: flex;
+  flex-direction: column;
+}
+.Form_Heading h1{
+  color: white;
+  font-size: 60px;
+  line-height: 20px;
+}
+.Form_Heading p{
+  color: white;
+  font-size: 18px;
+}
+.Form_Heading i{
+  color: white;
+  font-size: 40px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: calc(10vh - 20px); /* Adjust the height of the bounce */
+  }
+}
+@keyframes rotate {
+  from {
+      transform:translateZ(30deg);
+  }
+  to {
+      transform:rotateY(360deg);
+  }
+}
+
+
+/* HomeCss Media Queries */
+@media only screen and (max-width: 768px) {
+  .Total_Home {
+    flex-direction: column;
+    padding: 10px 10px;
+    height: auto;
+    gap: 10px;
+  }
+  .Home_Text,
+  .Home_image {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .Home_Text > img {
+    width: 30%;
+  }
+  .Home_Text .Home_h1_text{
+    color: white;
+    font-size: 16px;
+    margin-bottom:0px;
+  }
+  .Home_Text p{
+    color:white;
+    font-size: 13px;
+    letter-spacing: 0px;
+  }
+  .Total_Cards{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    gap:0px;
+    align-items:center;
+    justify-content:center;
+  }
+  .Card_Home{
+    width:50%;
+  }
+  .Button button{
+    width: 80%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
+  }
+  .Home_image{
+    padding: 2px 0px;
+  }
+  .Home_image a{
+    top: 5px;
+    padding: 0.5rem 0.5rem;
+  }
+  .Card_Text h1{
+    font-size: 20px;
+    margin-bottom:0px;
+  }
+  .Card_Text p{
+    font-size: 13px;
+    padding: 0px 0px;
+    border: 0px;
+  }
+  .Cards_About{
+    width: 100%;
+    padding: 25px 10px;
+    border-radius: 10px;
+  }
+  .Sub_About{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Sub_About>img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .Text_Card_About{
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+  }
+  .Total_Bullet>p{
+    font-size: 15px;
+    letter-spacing: 0.1px;
+  }
+  .Total_Info{
+    line-height: 35px;
+  }
+  .Total_Info .Info_Text h2{
+    color: #122323;
+    font-size: 25px;
+  }
+  .Timer_Text{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .Total_Timer{
+    height: auto;
+    gap: 10px;
+  }
+  .Countdown_Component h1{
+    font-size: 20px;
+  }
+  .Countdown h1{
+    font-size: 40px;
+  }
+  .Countdown_Component small{
+    font-size: 15px;
+  }
+  .Total_Action .Action_Left h1{
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 400;
+  }
+  .Total_Action .Action_Left{
+    padding: 8px;
+    width: 100%;
+    height:auto;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .Total_Action .Action_Left ul{
+    line-height: 25px;
+    font-weight: 500;
+    margin-left: 30px;
+  }
+  .Total_Action .Action_Right{
+    width: 100%;
+    padding: 20px 20px;
+    height:auto;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .Action_Right button{
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+  .Total_Action{
+    height: auto;
+    padding: 18px;
+  }
+  .form-container {
+    left:10px;
+    bottom: 10px;
+    width: 80%;
+    padding:5px 20px;
+    border-radius: 2px;
+  }
+  .Form_Heading h1{
+    color: white;
+    font-size: 40px;
+    line-height: 0px;
+  }
+  .Form_Details button{
+    padding: 0.5rem 0.5rem;
+    font-size: 15px;
+    border-radius: 3px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .Form_Heading i{
+    font-size: 20px;
+  }
+
+}
+
+/* AboutCss Media Queries */
+@media only screen and (max-width: 1024px) {
+  .Total_About {
+    padding: 0px 20px;
+  }
+  .Text_Card_About {
+    width: 100%;
+  }
+}
+
+/* InfoCss Media Queries */
+@media only screen and (max-width: 768px) {
+  .Total_Info .Info_Text h1 {
+    font-size: 40px;
+  }
+  .Info_Text h2 {
+    font-size: 30px;
+  }
+  .Inner_Info_Card {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .Inner_Info_Card > img {
+    width: 50%;
+  }
+  .Inner_Info_Card > p {
+    width: 80%;
+  }
+}
+
+/* TimerCss Media Queries */
+@media only screen and (max-width: 768px) {
+  .Total_countdown .Countdown,
+  .Countdown_Component h1 {
+    font-size: 40px;
+  }
+}
+
+/* ActionCss Media Queries */
+@media only screen and (max-width: 1024px) {
+  .Total_Action {
+    flex-direction: column;
+    height: auto;
+  }
+  .Total_Action .Action_Left,
+  .Total_Action .Action_Right {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .Total_Action .Action_Left h1 {
+    font-size: 30px;
+  }
+  .Total_Action .Action_Left ul {
+    font-size: 16px;
+  }
+  .Total_Action .Action_Right h1 {
+    font-size: 60px;
+  }
+  .Total_Action .Action_Right h1 span {
+    font-size: 16px;
+  }
+}
+
